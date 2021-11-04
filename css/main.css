@@ -1,0 +1,262 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-hover: rgb(199, 199, 199);
+}
+
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1;
+}
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px;
+}
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+  min-height: 100%;
+}
+
+.container-pix {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.btn-white {
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--color-white);
+  transition: 0.2s ease-in-out;
+  color: var(--color-black);
+  border-radius: 4px;
+  border: none;
+}
+.btn-white:hover {
+  transition: 0.2s ease-in-out;
+  background-color: var(--color-hover);
+}
+
+a {
+  color: var(--color-black);
+}
+
+.header {
+  font-size: 16px;
+  height: 62px;
+}
+.header .container-adapt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container-adapt a {
+  align-items: center;
+  display: flex;
+}
+.header .container-adapt a p {
+  margin: 0;
+}
+
+.container-adapt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 62px;
+  max-width: 90%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+
+.logo-img {
+  height: 46px;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.menu {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: medium;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+.nav-item:last-child {
+  margin-right: 20px;
+}
+
+/* Hover underline effect */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--color-black);
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-black);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* END of Hover underline effect */
+.btn-black {
+  margin-left: 20px;
+  padding: 10px 32px;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 2px transparent solid;
+  transition: 0.2s ease-in-out;
+}
+.btn-black:hover {
+  border: 2px var(--color-black) solid;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  transition: 0.2s ease-in-out;
+}
+
+.title-section {
+  height: 735px;
+  background-image: url("../img/BGImage.jpg");
+  background-size: cover;
+}
+
+.title-section__container {
+  position: inherit;
+}
+
+.title-content__wrapper {
+  position: relative;
+  top: 128px;
+  left: 110px;
+  max-width: 640px;
+}
+
+.main-title {
+  font-weight: bold;
+  font-size: 64px;
+  color: var(--color-white);
+  margin-bottom: 48px;
+}
+
+.btns-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.what-we-do-btn {
+  margin-right: 24px;
+}
+
+.btn-video {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: var(--color-white);
+  transition: 0.2s ease-in-out;
+}
+.btn-video svg {
+  margin-right: 8px;
+  fill: var(--color-white);
+  transition: 0.2s ease-in-out;
+}
+.btn-video:hover {
+  transition: 0.2s ease-in-out;
+  color: var(--color-hover);
+}
+.btn-video:hover svg {
+  fill: var(--color-hover);
+}
+/*# sourceMappingURL=main.css.map */
